@@ -11,15 +11,10 @@ import './styles/style.scss';
 import './firebase/firebase';
 import './playground/promises';
 
+
+
+
 const store = configureStore();
-
-store.dispatch(addExpense({description:`Water bill`,createdAt:120,amount:4500}));
-
-store.dispatch(addExpense({description:`Rent`,createdAt:122,amount:2000}));
-
-store.dispatch(addExpense({description:`Gas bill`,createdAt:124, amount:1200}));
-
-
 
 
 
@@ -29,8 +24,10 @@ const visibleExpenses = getVisibleExpenses(state.expenses,state.filters);
 
 
 
+
 const jsx = (
 <Provider store={store}>
+      
     <AppRouter/>
 </Provider>
 );
