@@ -1,9 +1,9 @@
 {
     "name": "Expensify",
-    "version": "1.0.0",
+    "version": "1.0.5",
     "main": "index.js",
     "author": "Kamil Gebala",
-    "license": "",
+    "license": "MIT",
     "scripts": {
         "serve": "live-server public/",
         "build:dev": "webpack",
