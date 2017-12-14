@@ -10,9 +10,10 @@ import {startLogin} from '../actions/auth';
          this.props.startLogin();
      };
     render(){
-        return(<div>
-            <button onClick={this.onClick}>Login</button>
-        </div>);
+        return(<div className="box-layout">
+            <div className="box-layout__box"><h1 className="box-layout__title">Expensify</h1><p>It's time to get your expenses under control.</p>
+            <button className="button" onClick={this.onClick}>Login</button>
+        </div></div>);
     }
     
 }
